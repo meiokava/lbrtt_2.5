@@ -5,8 +5,9 @@ import sys
 if __name__ == '__main__':
     a = tuple(map(int, input().split()))
     k = 0
-    for i in range(1, len(a)):
+    for ind, val in enumerate(a):
         if k == 1:
-            print(a[i], " ")
-        if a[i - 1] == a[i]:
+            print(val, " ")
+        if a[ind - 1] == val:
             k = 1
+
